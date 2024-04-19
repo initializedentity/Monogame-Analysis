@@ -26,7 +26,7 @@
   
   - Os ficheiros portadores do source code deste projeto são os ficheiros "BallSpawner.cs" "Game1.cs" e "Snake.cs". Comecemos por analisár o ficheiro "BallSpawner.cs", responsável por criar a "comida" que a cobra deve comer.
 
-    ### - BallSpawner.cs
+    ## BallSpawner.cs
       | Esta secção é responsável pela criação de variáveis a serem usadas para a criação e posicionamento da comida da cobra. Sendo a var "BallPosition" responsável por armazenar a localização da comida num espaço bidimensional; a        "_gridsize" por alocar localmente o tamanho predefinido de cada celula no ecrã (ou seja o número de passos que a cobra pode dar no ecrã), esta recebe o valor definido em "Game1.cs"; "_rng" que recebe um valor que define uma          "seed", usada para gerar um valor random; e finalmente a var "_ballTexture" que armazena a textura da comida.
       
       ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/c819af63-5396-440c-852a-54d44b951262)
@@ -42,5 +42,5 @@
       ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/2e4a5c3f-8637-46d7-93f7-8cba45424faf)
 
 
-    ### Snake.cs
+    ## Snake.cs
       | 

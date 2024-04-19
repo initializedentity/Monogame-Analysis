@@ -105,4 +105,16 @@ Movement: W, A, S, D
 
   ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/4b4ab45b-ace5-4b81-80c0-c5536a757967)
 
-- Funções responsáveis pela inicialização do jogo. Game1() não apresenta nada de relevante para além do standard. LoardContent() apenas carrega as texturas para as variáveis correspondentes, a unica de relevância é a GameOver var que cria 
+- Funções responsáveis pela inicialização do jogo. Game1() não apresenta nada de relevante para além do standard. LoardContent() apenas carrega as texturas para as variáveis correspondentes, a unica de relevância é a GameOver var que cria uma textura intermediária que cobre o ecrã original com a string "Game Over", esta no entanto só é posicionada quando o Game Over state for true, se não apenas se encontra desenhada.
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/6e42f6f6-5fa8-4af8-b88a-a9aa3bc29f31)
+
+
+- Função que gere o jogo inteiro, determinando quando o jogo acaba (GameOver if ou Botão Backspace ou Esc premidos) e atualiza a cobra.
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/2dcadcf7-b3bb-4d26-bbce-f31ee669023a)
+
+
+- Função responsável por desenhar todos os elementos no ecrã, começando por pintar o background da janela de preto, seguido da grelha, seguido da cobra, seguido da comida e caso o estado do jogo seja "Game Over", então desenha a Game Over screen, faz isto através de 2 Vetores2, o primeiro determinando o centro do ecrã para centrar a string, e o segundo para determinar o centro da string para que o centro desta coincida com o do ecrã, ficando assim o texto centrado.
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/adb50aeb-e8f6-45c3-a599-f94b9139df1d)

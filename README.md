@@ -101,6 +101,8 @@ Movement: W, A, S, D
 
 ## Game1.cs
 
-- 
+- Váriáveis usadas nesta secção do código, onde GameOver é usada para determinar o estado do jogo; \_graphics e \_spriteBatch são variáveis usadas para interagir com a framework Monogame; \_gridTexture é a textura do background; \_snake é uma instância da classe Snake que gere a cobra (Snake.cs); \_ball é usada para gerir a comida; _font para gerir a font usada no jogo; e _gameOverTextures para gerir a Game Over screen.
 
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/4b4ab45b-ace5-4b81-80c0-c5536a757967)
 
+- Funções responsáveis pela inicialização do jogo. Game1() não apresenta nada de relevante para além do standard. LoardContent() apenas carrega as texturas para as variáveis correspondentes, a unica de relevância é a GameOver var que cria 

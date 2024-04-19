@@ -73,5 +73,34 @@ Movement: W, A, S, D
   ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/12e671bc-224b-470d-9f17-ee267da1150e)
 
 
-- Esta secção é responsável por efetuar o movimento da cobra, 
+- Esta secção é responsável por efetuar o movimento da cobra, onde cada parte do corpo incluindo a cabeça e cauda são movidas para sua nova posição, esta é obtida através da soma do valor de retorno da função GetMovement que devolver um vetor. Caso esteja-se a mover a cabeça e esta tiver uma posição abaixo de 0 ou acima do limite da grelha causa um fim de jogo. Caso contrário altera as direções dos elementos do corpo, primeiro armazena a direção da célula atual para usar como referência para a próxima (efetivamente fazendo cada célula seguir a cabeça), de seguida altera a direção da célula para a da anterior (ou cabeça se for a primeira célula do corpo) e muda o valor da direção atual para o valor antigo da célula que acabamos de alterar, para repetir o ciclo para as outras células.
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/adaacc78-c9d4-4211-bd78-b9d81542fbf2)
+
+
+- Se a algum ponto ouver uma célula que não seja a cabeça com a mesma posição da cabeça, então o jogo termina (a cabeça esbarrou contra o corpo).
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/f91934f5-5f0f-40f0-a783-66311f89c2ff)
+
+
+- Se a cabeça está na mesma posição que a comida (cobra comeu comida) então gera-se uma nova cabeça e diminui-se a variável \_snakeSpeed, que por mais que contra intuitivo pareça, aumenta a velocidade da cobra, pois faz com que o tempo entre movimentos seja menor (o qual é obtivo através da multiplicação da velocidade da cobra pela constante MOVEMENT\_COUNTER), a velocidade desta nunca é menor que 0.18359375 (estes valores de velocidade são pelo meu entender usados arbitráriamente, tendo sendo definidos pelo gosto do programador originais). A cauda é armazenada numa váriável à parte e a sua versão na lista é transformada numa celula do corpo, por fim a cauda é adicionada de volta com um offset para estár atrás da célula que ocupa a posição antiga da cauda.
+
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/e3b4f032-725f-4a0c-940b-abd10babf5ac)
+
+
+- Esta função é uma simples função que desenha os elementos da cobra, sendo o primeiro if responsável pela cabeça, o segundo pela cauda e o else pelas células do corpo da cobra.
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/060cea25-a936-4e92-840e-0f2dbb83d51d)
+
+
+- Função responsável pelos vetores utilizados nos cálculos de movimento e offset
+
+  ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/a3f9672c-c1e5-45e4-9d09-c09d1df1ce1d)
+
+
+## Game1.cs
+
+- 
+
 

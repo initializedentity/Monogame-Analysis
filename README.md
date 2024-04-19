@@ -1,5 +1,5 @@
 # **MONOGAME SNAKE - ANALYSIS**
-### Aluno: Ricardo Lopes (22337)
+***Aluno:*** Ricardo Lopes (22337)
 
 
 ### **INTRODUÇÃO:**

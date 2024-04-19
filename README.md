@@ -1,4 +1,4 @@
-# MONOGAME SNAKE - ANALYSIS - Aluno: Ricardo Lopes (22337)
+# MONOGAME SNAKE - ANALYSIS (Ricardo Lopes: 22337)
 
 ### INTRODUÇÃO:
   Este projeto consiste na análise de um jogo pré-programado através da framework Monogame. O jogo escolhido foi "Monogame Snake"; sendo este um simples clone do jogo clássico snake. A     velocidade do jogo aumenta conforme o jogador consome mais comida e as paredes da janela constituem um "Game Over".

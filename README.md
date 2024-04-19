@@ -1,13 +1,12 @@
-# **MONOGAME SNAKE - ANALYSIS**
-**Aluno: Ricardo Lopes (22337)**
+# MONOGAME SNAKE - ANALYSIS - Aluno: Ricardo Lopes (22337)
 
-### **INTRODUÇÃO:**
+### INTRODUÇÃO:
   Este projeto consiste na análise de um jogo pré-programado através da framework Monogame. O jogo escolhido foi "Monogame Snake"; sendo este um simples clone do jogo clássico snake. A     velocidade do jogo aumenta conforme o jogador consome mais comida e as paredes da janela constituem um "Game Over".
 
-### **CONTROLS:**
+### CONTROLS:
   Movement: W, A, S, D
 
-### **ANÁLISE DOS FICHEIROS DO PROJETO:**
+### ANÁLISE DOS FICHEIROS DO PROJETO:
   - Os ficheiros encontrados na diretoria principal são ficheiros do github original e podem ser ignorados, com a exceção do ficheiro "monogame_snake.sln", sendo este o ficheiro de solução do projeto.
   
   ![image](https://github.com/initializedentity/Monogame-Analysis/assets/167578514/bbeab16e-a819-45b7-a274-7139fb8b4c31)
